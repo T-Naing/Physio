@@ -22,7 +22,7 @@
             <p>With the best practice</p>
           </div>          
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -32,15 +32,15 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
          <ul id="nav-list" class="nav navbar-nav navbar-right">
-          <li>
+          <li id="navHomeButton" class="active">
             <a href="index.html">
             Home</a>
           </li>
           <li>
             <a href="#">About Us</a>
           </li>
-          <li>
-            <a href="#">Services</a>
+          <li id="navServicesButton" class="">
+            <a href="#" onclick="$phys.loadServices();">Services</a>
           </li>
           <li>
             <a href="#">Team</a>
@@ -69,43 +69,6 @@
   <div id="xs-booknow" class="text-center visible-xs">* Book Now</div>
 
   <div id="main-content" class="container">
-
-    <div class="jumbotron">
-      <img src="images/dumbbells-2465478_1280.jpg" alt="Picture of restaurant" class="img-responsive">
-    </div>
-    <p id="text" class="text-justify">
-      Physical therapy (PT), also known as physiotherapy, is a healthcare profession, as well as the care provided by physical therapists who promote, maintain, or restore health through patient education, physical intervention, disease prevention, and health promotion. Physical therapist is the term used for such professionals in the United States, and physiotherapist is the term used in many other countries.
-
-      The career has many specialties including musculoskeletal, orthopedics, cardiopulmonary, neurology, endocrinology, sports medicine, geriatrics, pediatrics, women's health, wound care and electromyography. PTs practice in many settings, both public and private.[1]
-
-      In addition to clinical practice, other aspects of physical therapist practice include research, education, consultation, and health administration. Physical therapy is provided as a primary care treatment or alongside, or in conjunction with, other medical services. In some jurisdictions, such as the United Kingdom, physical therapists may have the authority to prescribe medication.[2]
-    </p>
-
-    <div class="row">
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <a href="https://maps.app.goo.gl/wjbg3RwbRicFxrzs9" target="_blank">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099.9230890435467!2d103.8935155200263!3d1.3902633601688867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2smm!4v1709128763439!5m2!1sen!2smm" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <span>map</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <a href="#">
-          <div id="menu-tile"> 
-            <div >
-              <h3>Our Opening Hours</h3>
-              <h4>By Appointment Only</h4>
-              Monday – Friday: 9am – 6pm<br>
-              Saturday: 9am – 2pm<br>
-              Sunday/PH: CLOSED
-            </div>
-            <span>Book Now</span>
-          </div>
-        </a>
-      </div>
-    </div><!-- End of .row -->
 
   </div><!-- End of #main-content -->
 
@@ -147,10 +110,10 @@
     </div>
   </footer>
 
-
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
